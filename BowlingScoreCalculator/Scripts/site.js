@@ -9,6 +9,7 @@
     self.score = ko.observable(0);
     self.framesPlayed = ko.observable(0);
     self.currentFrame = ko.observable(1);
+    self.isSubmitEnabled = ko.observable(true);
 
     self.firstFrame.subscribe(function (value) {
 
@@ -16,7 +17,7 @@
             self.isBonusFrameActive(true);
         else {
             self.bonusFrame(0);
-            self.isBonusFrameActive(true);
+            self.isBonusFrameActive(false);
         }
 
         if (self.currentFrame() != 10 && value == 10) {
@@ -40,19 +41,24 @@
             "Second": self.secondFrame(),
             "Third": self.bonusFrame()
         });
+
         $.ajax({
             type: "POST",
             contentType: "application/json",
             url: '/Home/GetScore',
-            data: JSON.stringify(self.frames()),
+            data: JSON.stringify({ "frames": self.frames() }),
             success: function(data) {
                 if (data) {
                     self.score(data.score);
-                    self.firstFrame(0);
-                    self.secondFrame(0);
-                    self.bonusFrame(0);
                     self.framesPlayed(self.frames().length);
-                    self.currentFrame(self.currentFrame() + 1);
+                    if (self.currentFrame() != 10) {
+                        self.firstFrame(0);
+                        self.secondFrame(0);
+                        self.bonusFrame(0);
+                        self.currentFrame(self.currentFrame() + 1);
+                    } else {                
+                        self.isSubmitEnabled(false);
+                    }
                 }
             },
             error: function(xhr, err) {

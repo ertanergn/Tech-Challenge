@@ -1,4 +1,4 @@
-﻿namespace BowlingScoreCalculator.Models
+﻿namespace ScoreCalculator
 {
     public class Frame
     {

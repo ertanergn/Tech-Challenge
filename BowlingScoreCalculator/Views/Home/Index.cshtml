@@ -23,15 +23,15 @@
                                     <table class="table">
                                         <tbody>
                                         <tr>
-                                            <td>First Frame</td>
+                                            <td>First roll</td>
                                             <td><input type="text" name="firstFrame" id="firstFrame" class="form-control input-sm" placeholder="Please enter your score" data-bind="value: firstFrame, valueUpdate: 'afterkeydown'"></td>
                                         </tr>
                                         <tr data-bind="visible: isSecondFrameActive">
-                                            <td>Second Frame</td>
+                                            <td>Second second</td>
                                             <td><input type="text" name="secondFrame" id="secondFrame" class="form-control input-sm" placeholder="Please enter your score" data-bind="value: secondFrame, valueUpdate: 'afterkeydown'"></td>
                                         </tr>
                                         <tr data-bind="visible: isBonusFrameActive">
-                                            <td>Bonus Frame</td>
+                                            <td>Bonus roll</td>
                                             <td><input type="text" name="bonusFrame" id="bonusFrame" class="form-control input-sm" placeholder="Please enter your score" data-bind="value: bonusFrame"></td>
                                         </tr>
                                         <tr>
@@ -47,7 +47,7 @@
                                             <td><span data-bind="text: score"/></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="submit" value="Submit Frames" class="btn btn-sm btn-success"></td>
+                                            <td><input type="submit" value="Submit Frames" class="btn btn-sm btn-success" data-bind="enable: isSubmitEnabled"></td>
                                         </tr>
                                         </tbody>
                                     </table>

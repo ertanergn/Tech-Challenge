@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingScoreCalculator", "BowlingScoreCalculator\BowlingScoreCalculator.csproj", "{6D8036F8-FE8F-4D53-B9A2-45876B452579}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreCalculator", "ScoreCalculator\ScoreCalculator.csproj", "{A8606103-FB33-4163-8925-E0845C4249F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreCalculator.Test", "ScoreCalculator.Test\ScoreCalculator.Test.csproj", "{7A6A93FF-3717-418F-8896-1940A2D8168E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{6D8036F8-FE8F-4D53-B9A2-45876B452579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D8036F8-FE8F-4D53-B9A2-45876B452579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D8036F8-FE8F-4D53-B9A2-45876B452579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8606103-FB33-4163-8925-E0845C4249F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8606103-FB33-4163-8925-E0845C4249F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8606103-FB33-4163-8925-E0845C4249F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8606103-FB33-4163-8925-E0845C4249F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6A93FF-3717-418F-8896-1940A2D8168E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6A93FF-3717-418F-8896-1940A2D8168E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6A93FF-3717-418F-8896-1940A2D8168E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6A93FF-3717-418F-8896-1940A2D8168E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
